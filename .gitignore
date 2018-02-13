@@ -1,0 +1,11 @@
+*.egg*
+*.pyc
+*.mo
+*.log
+*.db
+*.sqlite3
+*.mysql-dump
+/static/
+/node_modules/
+/bower_components/
+*/local_settings.py

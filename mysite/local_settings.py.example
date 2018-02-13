@@ -1,0 +1,41 @@
+
+# Database
+# https://docs.djangoproject.com/en/1.11/ref/settings/#databases
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'jify',
+        'USER': 'root',
+        'PASSWORD': 'xxx',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+    }
+}
+
+ALLOWED_HOSTS = ['www.self-signed.cn']
+
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': True,
+    'formatters': {
+        'verbose': {
+            'format': '%(levelname)s %(asctime)s %(pathname)s[line:%(lineno)d - %(funcName)s()]'
+                      ' %(process)d %(thread)d %(message)s'
+        }},
+    'handlers': {
+        'console': {
+            'level': 'INFO',
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose',
+        },
+    },
+    'loggers': {
+        '': {
+            'handlers': ['console'],
+            'propagate': True,
+            'level': 'INFO',
+        },
+    }
+}

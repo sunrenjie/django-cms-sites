@@ -36,15 +36,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
-
-
-
-
 ROOT_URLCONF = 'mysite.urls'
-
-
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
@@ -142,6 +134,7 @@ INSTALLED_APPS = (
     'djangocms_snippet',
     'djangocms_googlemap',
     'djangocms_video',
+    'ant',
     'mysite'
 )
 

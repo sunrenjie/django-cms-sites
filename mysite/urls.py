@@ -12,7 +12,10 @@ from django.views.static import serve
 
 admin.autodiscover()
 
+from ant.views import favicon_view
+
 urlpatterns = [
+    url(r'^favicon\.ico$', favicon_view),  # serving favicon.ico; see also https://stackoverflow.com/a/21938270
     url(r'^sitemap\.xml$', sitemap,
         {'sitemaps': {'cmspages': CMSSitemap}}),
 ]
